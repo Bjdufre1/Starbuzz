@@ -39,7 +39,7 @@ public class StarbuzzDatabaseHelper extends SQLiteOpenHelper {
         courseValues.put("PREFIX", prefix);
         courseValues.put("COURSENUMBER", CourseNumber);
         courseValues.put("DESCRIPTION", Description);
-        db.insert("DRINK", null, courseValues);
+        db.insert("COURSES", null, courseValues);
     }
 
     private void updateMyDatabase(SQLiteDatabase db, int oldVersion, int newVersion) {
